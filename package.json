@@ -1,0 +1,38 @@
+{
+  "name": "feedy",
+  "version": "0.0.0",
+  "description": "All social tape in one",
+  "main": "index.js",
+  "repository": "git@github.com:Singapore-Tech-Entrepreneurs/feedy.git",
+  "author": "Hydrock <hydrock74@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "2.1.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.2",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.babel.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress --open",
+    "build": "cross-env NODE_ENV=production webpack --progress"
+  },
+  "dependencies": {
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0"
+  }
+}
